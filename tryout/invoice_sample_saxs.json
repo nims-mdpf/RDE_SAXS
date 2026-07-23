@@ -1,0 +1,44 @@
+{
+    "datasetId": "1s1xxxxf4-0d1v-41b0-1dea-2 3bf4dh09gxx",
+    "basic": {
+        "dateSubmitted": "",
+        "dataOwnerId": "0cxx3ef274f28e611de4074638b4dc43e737ab9931323435323434xx",
+        "dataName": "",
+        "instrumentId": null,
+        "experimentId": null,
+        "description": null
+    },
+    "custom": {
+        "measurement_temperature": null,
+        "sample_holder_name": null,
+        "key1": "1",
+        "key2": "2",
+        "key3": "3",
+        "key4": "4",
+        "key5": "5",
+        "common_data_type": "SAXS",
+        "common_data_origin": "experiments",
+        "common_technical_category": "measurement",
+        "common_reference": null,
+        "measurement_method_category": "散乱_回折",
+        "measurement_method_sub_category": "X線回折",
+        "measurement_analysis_field": null,
+        "measurement_measurement_environment": null,
+        "measurement_energy_level_transition_structure_etc_of_interst": null,
+        "measurement_measured_date": null,
+        "measurement_standardized_procedure": null,
+        "measurement_instrumentation_site": null
+    },
+    "sample": {
+        "sampleId": null,
+        "names": [
+            "test1"
+        ],
+        "composition": null,
+        "referenceUrl": null,
+        "description": null,
+        "generalAttributes": [
+        ],
+        "ownerId": "de17c7b3f0ff5126831c2d519f481055ba466ddb623866613231xxxx"
+    }
+}

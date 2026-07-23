@@ -1,0 +1,68 @@
+{
+    "main_image_setting": {
+        "name": {
+            "ja": "代表画像の設定",
+            "en": "Main Image Setting"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "order": 1
+    },
+    "sample_id": {
+        "name": {
+            "ja": "sample_id",
+            "en": "sample_id"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "order": 2
+    },
+    "mean": {
+        "name": {
+            "ja": "平均",
+            "en": "mean"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "unit": "nm",
+        "order": 3,
+        "_feature": true
+    },
+    "sigma": {
+        "name": {
+            "ja": "標準偏差",
+            "en": "sigma"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "unit": "nm",
+        "order": 4,
+        "_feature": true
+    },
+    "intensity": {
+        "name": {
+            "ja": "強度",
+            "en": "intensity"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "order": 5,
+        "_feature": true
+    },
+    "cost": {
+        "name": {
+            "ja": "cost",
+            "en": "cost"
+        },
+        "schema": {
+            "type": "string"
+        },
+        "order": 6,
+        "_feature": true
+    }
+}

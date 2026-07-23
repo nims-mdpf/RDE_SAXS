@@ -1,0 +1,8 @@
+# PyPI library used in all projects
+matplotlib==3.9.4
+rdetoolkit==1.7.0
+# PyPI libraries to be customized and installed in each project
+plotly==5.23.0
+pydantic-xml==2.9.0
+scipy==1.13.0
+joblib==1.4.2

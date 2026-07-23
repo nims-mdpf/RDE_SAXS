@@ -1,0 +1,42 @@
+{
+    "datasetId": "1s1xxxxf4-0d1v-41b0-1dea-2 3bf4dh09gxx",
+    "basic": {
+        "dateSubmitted": "",
+        "dataOwnerId": "0cxx3ef274f28e611de4074638b4dc43e737ab9931323435323434xx",
+        "dataName": "testdata-14.ras",
+        "instrumentId": null,
+        "experimentId": null,
+        "description": null
+    },
+    "custom": {
+        "mean": "(0.1, 4.0)",
+        "sigma": "(0.01, 1.0)",
+        "h_log": "(1.0, 7.0)",
+        "common_data_type": "SAXSfitting",
+        "common_data_origin": "experiments",
+        "common_technical_category": "calculation",
+        "common_reference": null,
+        "calculation_calculation_method": "機械学習, 差分進化アルゴリズム",
+        "calculation_supercom_or_pc": "azure cloud",
+        "calculation_os": "Debian GNU/Linux 13 (trixie)",
+        "calculation_software_name": "SAXS差分進化フィッティング",
+        "calculation_software_version": null,
+        "calculation_software_reference": "SciPy, NumPy, joblib",
+        "calculation_operator": "RDE",
+        "calculation_calculated_date": null,
+        "calculation_material_name": null,
+        "calculation_key_object": "粒子平均半径, 粒子サイズ分布標準偏差, 散乱強度"
+    },
+    "sample": {
+        "sampleId": null,
+        "names": [
+            "test1"
+        ],
+        "composition": null,
+        "referenceUrl": null,
+        "description": null,
+        "generalAttributes": [
+        ],
+        "ownerId": "de17c7b3f0ff5126831c2d519f481055ba466ddb623866613231xxxx"
+    }
+}

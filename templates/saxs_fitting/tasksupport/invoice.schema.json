@@ -1,0 +1,272 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://dice.nims.go.jp/rde/dataset-templates/NIMS_SAXS/invoice.schema.json",
+    "description": "固有情報と試料情報のスキーマ",
+    "type": "object",
+    "required": [
+        "custom",
+        "sample"
+    ],
+    "properties": {
+        "custom": {
+            "type": "object",
+            "label": {
+                "ja": "固有情報",
+                "en": "Specific Information"
+            },
+            "required": [],
+            "properties": {
+                "mean": {
+                    "type": "string",
+                    "label": {
+                        "ja": "平均半径 (最小, 最大)",
+                        "en": "Mean (min, max)"
+                    },
+                    "options": {
+                        "unit": "nm"
+                    },
+                    "default": "(0.1, 50.0)"
+                },
+                "sigma": {
+                    "type": "string",
+                    "label": {
+                        "ja": "標準偏差 (最小, 最大)",
+                        "en": "Sigma (min, max)"
+                    },
+                    "options": {
+                        "unit": "nm"
+                    },
+                    "default": "(0.05, 10.0)"
+                },
+                "h_log": {
+                    "type": "string",
+                    "label": {
+                        "ja": "散乱強度 (最小, 最大)",
+                        "en": "H Log (min, max)"
+                    },
+                    "default": "(2.0, 6.0)"
+                },
+                "common_data_type": {
+                    "type": "string",
+                    "label": {
+                        "ja": "登録データタイプ",
+                        "en": "Data type"
+                    },
+                    "default": "SAXSfitting"
+                },
+                "common_data_origin": {
+                    "type": "string",
+                    "label": {
+                        "ja": "データの起源",
+                        "en": "Data Origin"
+                    },
+                    "default": "experiments"
+                },
+                "common_technical_category": {
+                    "type": "string",
+                    "label": {
+                        "ja": "技術カテゴリー",
+                        "en": "Technical Category"
+                    },
+                    "default": "calculation"
+                },
+                "common_reference": {
+                    "type": "string",
+                    "label": {
+                        "ja": "参考文献",
+                        "en": "Reference"
+                    }
+                },
+                "calculation_calculation_method": {
+                    "type": "string",
+                    "label": {
+                        "ja": "計算方法",
+                        "en": "Calculation method"
+                    },
+                    "default": "機械学習, 差分進化アルゴリズム"
+                },
+                "calculation_supercom_or_pc": {
+                    "type": "string",
+                    "label": {
+                        "ja": "SuperComまたはPC",
+                        "en": "SuperCom or PC"
+                    },
+                    "default": "azure cloud"
+                },
+                "calculation_os": {
+                    "type": "string",
+                    "label": {
+                        "ja": "オペレーティングシステム",
+                        "en": "OS"
+                    },
+                    "default": "Debian GNU/Linux 13 (trixie)"
+                },
+                "calculation_software_name": {
+                    "type": "string",
+                    "label": {
+                        "ja": "ソフトウェア名称",
+                        "en": "Software name"
+                    },
+                    "default": "SAXS差分進化フィッティング"
+                },
+                "calculation_software_version": {
+                    "type": "string",
+                    "label": {
+                        "ja": "ソフトウェアバージョン",
+                        "en": "Software version"
+                    }
+                },
+                "calculation_software_reference": {
+                    "type": "string",
+                    "label": {
+                        "ja": "ソフトウェア参照",
+                        "en": "Software reference"
+                    },
+                    "default": "SciPy, NumPy, joblib"
+                },
+                "calculation_operator": {
+                    "type": "string",
+                    "label": {
+                        "ja": "計算実行者",
+                        "en": "Operator"
+                    },
+                    "default": "RDE"
+                },
+                "calculation_calculated_date": {
+                    "type": "string",
+                    "label": {
+                        "ja": "計算日",
+                        "en": "Calculated date"
+                    },
+                    "format": "date",
+                    "options": {
+                        "placeholder": {
+                            "ja": "登録日から自動取得します",
+                            "en": "Automatically get from the registration date"
+                        }
+                    }
+                },
+                "calculation_material_name": {
+                    "type": "string",
+                    "label": {
+                        "ja": "物質名",
+                        "en": "Material name"
+                    }
+                },
+                "calculation_key_object": {
+                    "type": "string",
+                    "label": {
+                        "ja": "キーの配列/計算される主な物性",
+                        "en": "Key object"
+                    },
+                    "default": "粒子平均半径, 粒子サイズ分布標準偏差, 散乱強度"
+                }
+            }
+        },
+        "sample": {
+            "type": "object",
+            "label": {
+                "ja": "試料情報",
+                "en": "Sample Information"
+            },
+            "required": [
+                "names"
+            ],
+            "properties": {
+                "generalAttributes": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "object",
+                            "required": [
+                                "termId"
+                            ],
+                            "properties": {
+                                "termId": {
+                                    "const": "0444cf53-db47-b208-7b5f-54429291a140"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": [
+                                "termId"
+                            ],
+                            "properties": {
+                                "termId": {
+                                    "const": "3adf9874-7bcb-e5f8-99cb-3d6fd9d7b55e"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": [
+                                "termId"
+                            ],
+                            "properties": {
+                                "termId": {
+                                    "const": "e2d20d02-2e38-2cd3-b1b3-66fdb8a11057"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": [
+                                "termId"
+                            ],
+                            "properties": {
+                                "termId": {
+                                    "const": "efcf34e7-4308-c195-6691-6f4d28ffc9bb"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": [
+                                "termId"
+                            ],
+                            "properties": {
+                                "termId": {
+                                    "const": "7cc57dfb-8b70-4b3a-5315-fbce4cbf73d0"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": [
+                                "termId"
+                            ],
+                            "properties": {
+                                "termId": {
+                                    "const": "1e70d11d-cbdd-bfd1-9301-9612c29b4060"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": [
+                                "termId"
+                            ],
+                            "properties": {
+                                "termId": {
+                                    "const": "5e166ac4-bfcd-457a-84bc-8626abe9188f"
+                                }
+                            }
+                        },
+                        {
+                            "type": "object",
+                            "required": [
+                                "termId"
+                            ],
+                            "properties": {
+                                "termId": {
+                                    "const": "0d0417a3-3c3b-496a-b0fb-5a26f8a74166"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}
